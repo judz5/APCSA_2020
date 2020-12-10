@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="THuntApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/THuntApp_jar</output-path>
+    <root id="archive" name="THuntApp.jar">
+      <element id="module-output" name="THuntApp" />
+    </root>
+  </artifact>
+</component>
