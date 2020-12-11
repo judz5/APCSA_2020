@@ -103,7 +103,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("T-hunt Finder");
+        JFrame frame = new JFrame("T-hunt");
         frame.setContentPane(new App().panelMain);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(250,300);

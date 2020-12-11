@@ -19,6 +19,7 @@
         <properties>
           <background color="-1507361"/>
           <enabled value="true"/>
+          <font name="Copperplate Gothic Light"/>
           <foreground color="-1180446"/>
           <text value="Enter Hotwheels Case"/>
         </properties>
@@ -30,7 +31,7 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-8598276"/>
+          <background color="-268289"/>
           <text value=""/>
         </properties>
       </component>
