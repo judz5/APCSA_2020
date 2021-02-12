@@ -24,6 +24,8 @@ public class ListGetLast
 				ans.add(ray.get(i));
 			}
 		}
+		System.out.println(ray.size());
 		return ans;
+
 	}
 }//List<Integer>
