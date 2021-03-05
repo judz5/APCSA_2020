@@ -3,13 +3,15 @@
 public class LaplacianFilter implements Filter
 {
    public void filter(PixelImage pi) {
-       Pixel[][] data = pi.getData();    
+       Pixel[][] data = pi.getData();   
+       Pixel[][] temper = pi.getData();
        for(int row = 1;row<data.length-1;row++){
         for(int col = 1;col<data[row].length-1;col++){
-           Pixel temp = data[row][col];
-           int totalRed = temp.getRed() * 8;
-           int totalBlue = temp.getBlue() * 8;
-           int totalGreen = temp.getGreen()* 8;
+           Pixel temp = temper[row][col];
+           
+           int totalRed = temp.getRed() * 4;
+           int totalBlue = temp.getBlue() * 4;
+           int totalGreen = temp.getGreen()* 4;
            
            for(int rowCheck = row-1;rowCheck<=row+1;rowCheck++){
               for(int colCheck = col-1;colCheck<=col+1;colCheck++){
@@ -44,6 +46,6 @@ public class LaplacianFilter implements Filter
               temp.setBlue(totalBlue);
             }
         }
-        pi.setData(data);
+        pi.setData(temper);
     }
 }
