@@ -8,10 +8,11 @@
 public class GuassianBlurFilter implements Filter
 {
    public void filter(PixelImage pi) {
-       Pixel[][] data = pi.getData();    
+       Pixel[][] data = pi.getData();  
+       Pixel[][] temper = pi.getData();
        for(int row = 1;row<data.length-1;row++){
         for(int col = 1;col<data[row].length-1;col++){
-           Pixel temp = data[row][col];
+           Pixel temp = temper[row][col];
            int totalRed = 0;
            int totalBlue = 0;
            int totalGreen = 0;
@@ -39,7 +40,7 @@ public class GuassianBlurFilter implements Filter
               temp.setBlue(totalBlue/16);
             }
         }
-        pi.setData(data);
+        pi.setData(temper);
     }
     }
 

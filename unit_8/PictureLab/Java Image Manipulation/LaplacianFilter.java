@@ -9,9 +9,9 @@ public class LaplacianFilter implements Filter
         for(int col = 1;col<data[row].length-1;col++){
            Pixel temp = temper[row][col];
            
-           int totalRed = temp.getRed() * 4;
-           int totalBlue = temp.getBlue() * 4;
-           int totalGreen = temp.getGreen()* 4;
+           int totalRed = temp.getRed() * 8;
+           int totalBlue = temp.getBlue() * 8;
+           int totalGreen = temp.getGreen()* 8;
            
            for(int rowCheck = row-1;rowCheck<=row+1;rowCheck++){
               for(int colCheck = col-1;colCheck<=col+1;colCheck++){
