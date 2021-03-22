@@ -14,7 +14,7 @@ public class Card
 
   	//constructors
 	public Card(){
-
+		this(0, FACES[0]);
 	}
 
 	public Card(int f, String s){
@@ -33,13 +33,13 @@ public class Card
 
   	public int getValue()
   	{
-  		return face;
+		return face;
   	}
 
 	public boolean equals(Object obj)
 	{
-		Card other = (Card) obj;
-		if(this.getSuit().equals(other.getSuit()) && this.getValue() == other.getValue()){
+		Card other = (Card)obj;
+		if(this.getSuit().equals(other.getSuit()) && (this.getValue() == other.getValue())){
 			return true;
 		}
 		return false;
@@ -47,7 +47,7 @@ public class Card
 
   	//toString
 	public String toString(){
-		return FACES[face]+" of "+suit+" | value = "+getValue();
+		return FACES[face] + " of " + getSuit() + " | value = " + getValue();
 	}
   	
  }

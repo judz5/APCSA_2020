@@ -17,9 +17,13 @@ public class BlackJackCard extends Card
   	{
   		//enables you to build the value for the game into the card
   		//this makes writing the whole program a little easier
-
-
-		return 0;
+		if(super.getValue()==1){
+			return 11;
+		}else if(super.getValue()>9){
+			return 10;
+		}else{
+			return super.getValue();
+		}
   	}
   	
  }
