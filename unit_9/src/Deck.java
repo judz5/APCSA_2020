@@ -19,18 +19,19 @@ public class Deck
 
 	public Deck ()
 	{
-		//initialize data - stackOfCards - topCardIndex
-		
-		
-		//loop through suits
-			//loop through faces
-				//add in a new card
-		
+		stackOfCards = new ArrayList<Card>();//initialize data - stackOfCards - topCardIndex
+		topCardIndex = NUMCARDS-1;
+		for(int i =0; i<4; i++){//loop through suits
+			for(int k = 1;k<=13;k++){	//loop through faces
+				stackOfCards.add(new Card(k, SUITS[i]));//add in a new card
+			}
+		}
 	}
 
 	//modifiers
    public void shuffle ()
 	{
+		Collections.shuffle(stackOfCards);
 		//shuffle the deck
 		//reset variables as needed
 	}
@@ -38,12 +39,12 @@ public class Deck
    //accessors
 	public int  size ()
 	{
-		return 0;
+		return stackOfCards.size();
 	}
 
 	public int numCardsLeft()
 	{
-		return 0;
+		return topCardIndex+1;
 	}
 
 	public Card nextCard()

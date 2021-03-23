@@ -47,7 +47,7 @@ public class Card
 
   	//toString
 	public String toString(){
-		return FACES[face] + " of " + getSuit() + " | value = " + getValue();
+		return FACES[face] + " of " + getSuit() + " | value = " + getValue()+" ";
 	}
   	
  }
