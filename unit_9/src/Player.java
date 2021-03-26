@@ -37,6 +37,10 @@ public class Player
       winCount = numwins;
    }
 
+   public void win(){
+      winCount++;
+   }
+
    public int getWinCount() { return winCount; }
 
    public int getHandSize() {
@@ -54,15 +58,14 @@ public class Player
 
    public  boolean  hit( )
    {
+      if(getHandValue()<21){
+         return true;
+      }
       return false;
    }
 
    public String toString()
    {
-      System.out.println("Hand = ");
-      for(int i = 0;i<hand.size();i++){
-         System.out.println(hand.get(i));
-      }
-      return " - "+getHandValue();
+      return hand+" - "+getHandValue();
    }
 }

@@ -32,6 +32,7 @@ public class Deck
    public void shuffle ()
 	{
 		Collections.shuffle(stackOfCards);
+		topCardIndex = NUMCARDS-1;
 		//shuffle the deck
 		//reset variables as needed
 	}

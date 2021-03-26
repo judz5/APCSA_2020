@@ -33,7 +33,13 @@ public class Card
 
   	public int getValue()
   	{
-		return face;
+		if(face==1){
+			return 11;
+		}else if(face>9){
+			return 10;
+		}else{
+			return face;
+		}
   	}
 
 	public boolean equals(Object obj)
