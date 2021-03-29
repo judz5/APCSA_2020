@@ -13,6 +13,6 @@
 - BlackJack 6 (3/26/21)
 
 ----
-Issues with values because the blackjack value of the card is in the blackjack
-card class, but a deck is made up of Cards not blackjack cards, so the values are not correct
-fixed by making the values in the card class not the blackJackCard class
+I had issues with getting the blackjack value of the card, because a deck was
+made up of CARDS not BLACKJACKCARDS. In order to fix this I made the getvalue method
+in the card class return the blackjack value of the cards.
