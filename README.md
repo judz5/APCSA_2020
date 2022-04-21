@@ -11,4 +11,6 @@ I have taken the AP test, and have learned a lot this year. I am excited to see 
 - Learn Git and Github, Learning to use git to create this helped me keep track of my work, and work from multiple computers. There is no reason not to learn git if you plan to continue in computer science as it is a helpful tool that is used across the career.
 - Come up with your own projects, One thing i regret this year is not pushing myself harder. To be honest, I never struggled too hard with this class, and i think i used that as an excuse to relax. I only made one simple website but i wish i tried harder and learned more about computer science.
 
+      Update as of 2022, I still stand by learning git, it still upsets me when i see people not know how it works. Hopefully a 
+      lot of this code is still relevent for future classes.
 
